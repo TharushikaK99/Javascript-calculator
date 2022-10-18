@@ -1,0 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+}
+
+.row1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.row1 input {
+    height: 50px;
+    width: 250px;
+}
+
+.row2, .row3, .row4, .row5, .row6 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col1 button, .col2 button, .col3 button, .col4 button {
+    height: 50px;
+    width: 50px;
+}
