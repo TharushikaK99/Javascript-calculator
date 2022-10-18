@@ -34,6 +34,7 @@
     background-color: whitesmoke;
     font-size: xx-large;
     direction: rtl;
+    border-radius: 5px;
 }
 
 .row2, .row3, .row4, .row5, .row6 {
@@ -47,10 +48,12 @@
     height: 50px;
     width: 50px;
     background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 .col1 button:hover, .col2 button:hover, .col3 button:hover, .col4 button:hover {
     cursor: pointer;
+    box-shadow: 2px 2px rgba(78, 77, 77, 0.533);
 }
 
 h1 {
