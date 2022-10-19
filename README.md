@@ -4,7 +4,6 @@ This is a simple calculator built in Javascript.
 <br />
 
 ## How to contribute.
-***
 <br />
 
 * fork this repository. 
