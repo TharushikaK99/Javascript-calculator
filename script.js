@@ -7,6 +7,13 @@ function enable() {
     document.getElementById("multiply").disabled = false;
 }
 
+function disable() {
+    document.getElementById("plus").disabled = true;
+    document.getElementById("minus").disabled = true;
+    document.getElementById("divide").disabled = true;
+    document.getElementById("multiply").disabled = true;
+}
+
 function btn0() {
     document.getElementById("inputText").value += "0";
     enable();
@@ -55,23 +62,23 @@ function btnClear() {
 function btnPlus() {
     operator = "+";
     document.getElementById("inputText").value += "+";
-    document.getElementById("plus").disabled = true;
+    disable();
 }
 function btnMinus() {
     operator = "-";
     document.getElementById("inputText").value += "-";
-    document.getElementById("minus").disabled = true;
+    disable();
 }
 function btnMultiply() {
     operator = "x";
     document.getElementById("inputText").value += "x";
-    document.getElementById("multiply").disabled = true;
+    disable();
 }
 
 function btnDivide() {
     operator = "/";
     document.getElementById("inputText").value += "/";
-    document.getElementById("divide").disabled = true;
+    disable();
 }
 
 function btnEqual() {
