@@ -1,4 +1,5 @@
 var operator = "";
+var str;
 
 function enable() {
     document.getElementById("plus").disabled = false;
@@ -16,6 +17,11 @@ function disable() {
 
 function btn0() {
     document.getElementById("inputText").value += "0";
+    enable();
+}
+
+function btn00() {
+    document.getElementById("inputText").value += "00";
     enable();
 }
 
@@ -102,6 +108,14 @@ function btn9() {
 
 function btnClear() {
     document.getElementById("inputText").value = "0";
+}
+
+function btnClearEntry() {
+    str = document.getElementById("inputText").value
+    document.getElementById("inputText").value = str.slice(0, -1)
+    if (document.getElementById("inputText").value == "") {
+        document.getElementById("inputText").value = "0"
+    }
 }
 
 function btnPlus() {
