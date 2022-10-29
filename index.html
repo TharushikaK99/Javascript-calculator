@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,30 @@
     <script src="script.js" type="text/javascript"></script>
     <title>Calculator</title>
 </head>
+
 <body>
     <div class="container">
         <div class="cal">
             <div class="row1">
-                <input type="text" name="textField" id="inputText">
+                <input type="text" name="textField" id="inputText" value="0">
             </div>
 
-            <!-- <div class="row2">
-                <div class="col1">
-                    <button onclick="btn1()"><h1>1</h1></button>
+            <div class="row2">
+                <div class="col2 second">
+                    <button onclick="btnClear()"><h1>C</h1></button>
                 </div>
-
-                <div class="col2">
-                    <button onclick="btn2()"><h1>2</h1></button>
+                <div class="col4 second">
+                    <button onclick="btnClearEntry()"><h1>CE</h1></button>
                 </div>
-
-                <div class="col3">
-                    <button onclick="btn3()"><h1>3</h1></button>
-                </div>
-
-                <div class="col4">
-                    <button onclick="btn4()"><h1>X</h1></button>
-                </div>
-            </div> -->
+            </div>
 
             <div class="row3">
                 <div class="col1">
                     <button onclick="btn9()"><h1>9</h1></button>
                 </div>
-
                 <div class="col2">
-                    <button onclick="btnClear()"><h1>C</h1></button>
+                    <button onclick="btn00()"><h1>00</h1></button>
                 </div>
-
                 <div class="col3">
                     <button onclick="btnDivide()" id="divide"><h1>/</h1></button>
                 </div>
@@ -89,7 +80,7 @@
 
             <div class="row6">
                 <div class="col1">
-                    <button onclick="btn0()" ><h1>0</h1></button>
+                    <button onclick="btn0()"><h1>0</h1></button>
                 </div>
 
                 <div class="col2">
@@ -103,8 +94,10 @@
                 <div class="col4">
                     <button onclick="btnEqual()"><h1>=</h1></button>
                 </div>
+
             </div>
         </div>
     </div>
 </body>
+
 </html>

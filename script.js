@@ -1,4 +1,5 @@
 var operator = "";
+var str;
 
 function enable() {
     document.getElementById("plus").disabled = false;
@@ -18,45 +19,103 @@ function btn0() {
     document.getElementById("inputText").value += "0";
     enable();
 }
+
+function btn00() {
+    document.getElementById("inputText").value += "00";
+    enable();
+}
+
 function btn1() {
-    document.getElementById("inputText").value += "1";
+    if (document.getElementById("inputText").value == 0) {
+        document.getElementById("inputText").value = "1";
+    } else {
+        document.getElementById("inputText").value += "1";
+    }
     enable();
 }
+
 function btn2() {
-    document.getElementById("inputText").value += "2";
+    if (document.getElementById("inputText").value == 0) {
+        document.getElementById("inputText").value = "2";
+    } else {
+        document.getElementById("inputText").value += "2";
+    }
     enable();
 }
+
 function btn3() {
-    document.getElementById("inputText").value += "3";
+    if (document.getElementById("inputText").value == 0) {
+        document.getElementById("inputText").value = "3";
+    } else {
+        document.getElementById("inputText").value += "3";
+    }
     enable();
 }
+
 function btn4() {
-    document.getElementById("inputText").value += "4";
+    if (document.getElementById("inputText").value == 0) {
+        document.getElementById("inputText").value = "4";
+    } else {
+        document.getElementById("inputText").value += "4";
+    }
     enable();
 }
+
 function btn5() {
-    document.getElementById("inputText").value += "5";
+    if (document.getElementById("inputText").value == 0) {
+        document.getElementById("inputText").value = "5";
+    } else {
+        document.getElementById("inputText").value += "5";
+    }
     enable();
 }
+
 function btn6() {
-    document.getElementById("inputText").value += "6";
+    if (document.getElementById("inputText").value == 0) {
+        document.getElementById("inputText").value = "6";
+    } else {
+        document.getElementById("inputText").value += "6";
+    }
     enable();
 }
+
 function btn7() {
-    document.getElementById("inputText").value += "7";
+    if (document.getElementById("inputText").value == 0) {
+        document.getElementById("inputText").value = "7";
+    } else {
+        document.getElementById("inputText").value += "7";
+    }
     enable();
 }
+
 function btn8() {
-    document.getElementById("inputText").value += "8";
+    if (document.getElementById("inputText").value == 0) {
+        document.getElementById("inputText").value = "8";
+    } else {
+        document.getElementById("inputText").value += "8";
+    }
     enable();
 }
+
 function btn9() {
-    document.getElementById("inputText").value += "9";
+    if (document.getElementById("inputText").value == 0) {
+        document.getElementById("inputText").value = "9";
+    } else {
+        document.getElementById("inputText").value += "9";
+    }
     enable();
 }
 
 function btnClear() {
-    document.getElementById("inputText").value = "";
+    document.getElementById("inputText").value = "0";
+}
+
+function btnClearEntry() {
+    str = document.getElementById("inputText").value
+    document.getElementById("inputText").value = str.slice(0, -1)
+    if (document.getElementById("inputText").value == "") {
+        document.getElementById("inputText").value = "0"
+    }
 }
 
 function btnPlus() {
@@ -64,11 +123,13 @@ function btnPlus() {
     document.getElementById("inputText").value += "+";
     disable();
 }
+
 function btnMinus() {
     operator = "-";
     document.getElementById("inputText").value += "-";
     disable();
 }
+
 function btnMultiply() {
     operator = "x";
     document.getElementById("inputText").value += "x";
@@ -97,7 +158,7 @@ function btnEqual() {
                 answer += numbers[i];
             }
             break;
-    
+
         case "-":
             for (let i = 1; i < numbers.length; i++) {
                 answer -= numbers[i];
